@@ -4,10 +4,10 @@ from ibm_watsonx_ai import APIClient, Credentials
 import os
 
 # Watsonx config
-project_id = os.environ.get("f36e54a3-3259-4cc7-9a2f-f9042584470e")
-api_key = os.environ.get("7kfkNVU-CXE0hLB1ZpB-xrNHLMa5LuxZj06D39QTdEOo")
+project_id = os.environ.get("WATSONX_PROJECT_ID")
+api_key = os.environ.get("WATSONX_API_KEY")
 url = "https://us-south.ml.cloud.ibm.com"
-vector_index_id = os.environ.get("32571e65-94fe-4850-affb-8bc8c0d7b854")
+vector_index_id = os.environ.get("WATSONX_VECTOR_INDEX_ID")
 
 # Init Watsonx client
 credentials = Credentials(api_key=api_key, url=url)
